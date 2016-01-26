@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/spotify"
+            style="@style/ButtonOrange"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:text="@string/btn.txt.spotify" />
+
+        <Button
+            android:id="@+id/scores"
+            style="@style/ButtonOrange"
+            android:layout_below="@+id/spotify"
+            android:layout_centerHorizontal="true"
+            android:text="@string/btn.txt.score" />
+
+        <Button
+            android:id="@+id/library"
+            style="@style/ButtonOrange"
+            android:layout_below="@+id/scores"
+            android:layout_centerHorizontal="true"
+            android:text="@string/btn.txt.library" />
+
+        <Button
+            android:id="@+id/buildItBigger"
+            style="@style/ButtonOrange"
+            android:layout_below="@+id/library"
+            android:layout_centerHorizontal="true"
+            android:text="@string/btn.txt.bulid_it_bigger" />
+
+        <Button
+            android:id="@+id/reader"
+            style="@style/ButtonOrange"
+            android:layout_below="@+id/buildItBigger"
+            android:layout_centerHorizontal="true"
+            android:text="@string/btn.txt.build_it_bigger" />
+
+        <Button
+            android:id="@+id/capstone"
+            style="@style/ButtonRed"
+            android:layout_below="@+id/reader"
+            android:layout_centerHorizontal="true"
+            android:text="@string/btn.txt.capstone" />
+    </RelativeLayout>
+</ScrollView>
